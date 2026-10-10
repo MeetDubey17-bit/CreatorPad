@@ -4,6 +4,8 @@
 
 CreatorPad is a custom hardware control pad designed to make video editing and everyday computer shortcuts easier to access.
 
+![CreatorPad concept render](assets/creatorpad-render.svg)
+
 ## Planned Features
 
 * Physical buttons for play/pause, cut, undo, and save
