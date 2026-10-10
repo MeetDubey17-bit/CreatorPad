@@ -1,17 +1,16 @@
 (kicad_sch (version 20230121)
-
-  (uuid "12345678-1234-1234-1234-123456789abc")
-
-  (paper "A4")
-
+  (uuid "creatorpad-schematic-2026")
+  (paper "A3")
+  
   (title_block
-    (title "CreatorPad - Hardware Control Pad")
+    (title "CreatorPad - Hardware Schematic")
     (date "2026-10-10")
-    (rev "1.0")
-    (comment 1 "ESP32-S3 based video editing shortcut pad")
-    (comment 2 "")
-    (comment 3 "")
-    (comment 4 "")
+    (rev "1.0-prototype")
+    (company "")
+    (comment 1 "ESP32-S3 based video editing shortcut controller")
+    (comment 2 "Prototype design - Pinout TBD, requires verification against ESP32-S3 datasheet")
+    (comment 3 "6 push buttons, OLED I2C display, status LED")
+    (comment 4 "GPIO assignments are preliminary and subject to change")
   )
 
   (layers
@@ -32,32 +31,59 @@
     )
   )
 
-  (symbol "Device:C"
+  (symbol "Device:LED"
     (pin_numbers hide)
-    (symbol "C_0_1"
-      (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508)))
-      (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508)))
+    (symbol "LED_0_1"
+      (polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27)) (stroke (width 0.254)) (fill (type none)))
+      (polyline (pts (xy -1.27 0) (xy 1.27 -1.27)) (stroke (width 0.254)) (fill (type none)))
+      (polyline (pts (xy 1.27 -1.27) (xy 1.27 0)) (stroke (width 0.254)) (fill (type none)))
+      (polyline (pts (xy 1.27 0) (xy 1.27 1.27)) (stroke (width 0.254)) (fill (type none)))
+      (polyline (pts (xy 1.27 1.27) (xy -1.27 0)) (stroke (width 0.254)) (fill (type none)))
     )
-    (symbol "C_1_1"
-      (pin passive line (at 0 3.81 270) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
-      (pin passive line (at 0 -3.81 90) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+    (symbol "LED_1_1"
+      (pin passive line (at -3.81 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      (pin passive line (at 3.81 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
     )
   )
 
+  (symbol "Switch:SW_Push"
+    (pin_numbers hide)
+    (symbol "SW_Push_0_1"
+      (circle (at -2.54 0) (radius 0.508) (stroke (width 0.127)) (fill (type none)))
+      (polyline (pts (xy 0 0.508) (xy 0 -0.508)) (stroke (width 0.127)) (fill (type none)))
+      (circle (at 2.54 0) (radius 0.508) (stroke (width 0.127)) (fill (type none)))
+    )
+    (symbol "SW_Push_1_1"
+      (pin passive line (at -5.08 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      (pin passive line (at 5.08 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+    )
+  )
+
+  (net 0 "")
+  (net 1 "GND")
+  (net 2 "+3V3")
+  (net 3 "GPIO4_Play")
+  (net 4 "GPIO5_Cut")
+  (net 5 "GPIO6_Undo")
+  (net 6 "GPIO7_Save")
+  (net 7 "GPIO15_Custom1")
+  (net 8 "GPIO16_Custom2")
+  (net 9 "GPIO8_SDA")
+  (net 10 "GPIO9_SCL")
+  (net 11 "GPIO17_LED")
+
   (junction (at 100 100) (diameter 0) (color 0 0 0 0))
 
-  (no_connect (at 100 100) (uuid "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"))
+  (wire (pts (xy 50 100) (xy 100 100)) (stroke (width 0.254)) (uuid "wire-001"))
 
-  (wire (pts (xy 100 100) (xy 120 100)) (stroke (width 0.254)) (uuid "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"))
+  (text "BUTTON SECTION\n\nSW1 → GPIO4 (Play/Pause)\nSW2 → GPIO5 (Cut)\nSW3 → GPIO6 (Undo)\nSW4 → GPIO7 (Save)\nSW5 → GPIO15 (Custom 1)\nSW6 → GPIO16 (Custom 2)\n\nAll buttons connect to GND when pressed\nFirmware uses internal pull-ups" (at 50 150 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
 
-  (text "ESP32-S3\nMicrocontroller\n(USB, GPIO, SPI)" (at 50 50 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+  (text "ESP32-S3 DEVELOPMENT BOARD\n(Placeholder - Model TBD)\n\nPower:\n  - 3.3V Rail → All VCC/3.3V inputs\n  - GND Rail → All GND inputs\n\nGPIO Assignments (Preliminary):\n  GPIO4 - Button 1 (Play/Pause)\n  GPIO5 - Button 2 (Cut)\n  GPIO6 - Button 3 (Undo)\n  GPIO7 - Button 4 (Save)\n  GPIO15 - Button 5 (Custom 1)\n  GPIO16 - Button 6 (Custom 2)\n  GPIO8 - I2C SDA (OLED)\n  GPIO9 - I2C SCL (OLED)\n  GPIO17 - LED Control (active high)\n  \nUSB Connection:\n  - USB-C for programming and power" (at 300 150 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
 
-  (text "6x Push Buttons\nPlay/Pause, Cut, Undo, Save, Custom1, Custom2" (at 50 100 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+  (text "OLED DISPLAY (I2C)\n0.96\", 128x64 pixels\nSSD1306 Controller\n\nConnections:\n  VCC → +3.3V (verify module supports 3.3V)\n  GND → GND Rail\n  SDA → GPIO8\n  SCL → GPIO9\n  I2C Address: 0x3C (default)" (at 800 150 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
 
-  (text "Rotary Encoder\nRotation + Push" (at 50 150 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+  (text "STATUS LED CIRCUIT\n\nLED1 (Red, 5mm)\n  Anode (+) → R1 (220Ω) → GPIO17\n  Cathode (-) → GND\n\nResistor Calculation:\n  Typical red LED: Vf = 2.0V\n  GPIO 3.3V - 2.0V = 1.3V\n  Current (15mA): R = 1.3V / 0.015A ≈ 87Ω\n  Use 220Ω for lower brightness (~6mA)" (at 600 500 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
 
-  (text "OLED Display (I2C)\n0.96\" 128x64 pixels" (at 50 200 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
-
-  (text "USB-C Connector\nPower + Data" (at 50 250 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+  (text "PROTOTYPE VALIDATION CHECKLIST\n\n☐ Confirm exact ESP32-S3 development board model\n☐ Verify GPIO pin assignments against official datasheet\n☐ Check OLED module 3.3V compatibility (some require 5V)\n☐ Measure actual LED forward voltage for final resistor value\n☐ Test button debouncing (firmware pull-up + debounce routine)\n☐ Verify I2C bus pull-up resistor requirements (OLED module may include them)\n☐ Simulate circuit in EDA tool before PCB layout\n☐ Perform ERC (Electrical Rule Check) on final schematic\n☐ Validate power consumption and thermal performance\n☐ Document any changes to GPIO assignments in firmware" (at 50 700 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
 
 )
