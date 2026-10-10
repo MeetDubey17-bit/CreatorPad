@@ -1,0 +1,11 @@
+Designator,Qty,Value,Device,Package,Description,Manufacturer,MPN,Notes
+U1,1,ESP32-S3,ESP32-S3 module,Module,"Main microcontroller for control pad","Espressif","ESP32-S3-WROOM-1-N16R8","Tentative module selection; exact board variant not finalized."
+SW1,1,Tactile Button,Push button switch,12x12mm,"Play/Pause action button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW2,1,Tactile Button,Push button switch,12x12mm,"Cut action button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW3,1,Tactile Button,Push button switch,12x12mm,"Undo action button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW4,1,Tactile Button,Push button switch,12x12mm,"Save action button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW5,1,Tactile Button,Push button switch,12x12mm,"Custom function 1 button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW6,1,Tactile Button,Push button switch,12x12mm,"Custom function 2 button","TBD","TBD","Tentative; exact tactile switch not finalized."
+SW7,1,Rotary Encoder,Rotary encoder,EC11,"Mode selection / additional control","TBD","TBD","Tentative; exact encoder part not finalized."
+DS1,1,128x64 OLED,OLED display,0.96" I2C,"Status/mode display","TBD","TBD","Tentative; exact display variant not finalized."
+J1,1,USB-C,USB-C receptacle,USB-C,"Power and data connection to host","TBD","TBD","Tentative; exact connector footprint not finalized."
