@@ -1,0 +1,63 @@
+(kicad_sch (version 20230121)
+
+  (uuid "12345678-1234-1234-1234-123456789abc")
+
+  (paper "A4")
+
+  (title_block
+    (title "CreatorPad - Hardware Control Pad")
+    (date "2026-10-10")
+    (rev "1.0")
+    (comment 1 "ESP32-S3 based video editing shortcut pad")
+    (comment 2 "")
+    (comment 3 "")
+    (comment 4 "")
+  )
+
+  (layers
+    (0 "F.Cu")
+    (31 "B.Cu")
+  )
+
+  (symbol "Device:R"
+    (pin_numbers hide)
+    (symbol "R_0_1"
+      (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+        (stroke (width 0.254)) (fill (type none))
+      )
+    )
+    (symbol "R_1_1"
+      (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+    )
+  )
+
+  (symbol "Device:C"
+    (pin_numbers hide)
+    (symbol "C_0_1"
+      (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508)))
+      (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508)))
+    )
+    (symbol "C_1_1"
+      (pin passive line (at 0 3.81 270) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      (pin passive line (at 0 -3.81 90) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+    )
+  )
+
+  (junction (at 100 100) (diameter 0) (color 0 0 0 0))
+
+  (no_connect (at 100 100) (uuid "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"))
+
+  (wire (pts (xy 100 100) (xy 120 100)) (stroke (width 0.254)) (uuid "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"))
+
+  (text "ESP32-S3\nMicrocontroller\n(USB, GPIO, SPI)" (at 50 50 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+  (text "6x Push Buttons\nPlay/Pause, Cut, Undo, Save, Custom1, Custom2" (at 50 100 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+  (text "Rotary Encoder\nRotation + Push" (at 50 150 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+  (text "OLED Display (I2C)\n0.96\" 128x64 pixels" (at 50 200 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+  (text "USB-C Connector\nPower + Data" (at 50 250 0) (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+)
