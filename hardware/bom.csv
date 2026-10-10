@@ -1,25 +1,37 @@
-Designator,Component,Qty,Unit Price (INR),Total Price (INR),Supplier (India),Part Number / Link,Price Status,Notes
-U1,ESP32-S3 Development Board (16MB Flash 8MB PSRAM),1,899,899,Amazon.in / Robocraze,"https://www.amazon.in/esp32-s3/s?k=esp32+s3",Verified,"Standard ESP32-S3 with USB-C, dual-core CPU"
-SW1,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Play/Pause button - through-hole mounting"
-SW2,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Cut button - through-hole mounting"
-SW3,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Undo button - through-hole mounting"
-SW4,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Save button - through-hole mounting"
-SW5,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Custom function 1 button - through-hole mounting"
-SW6,Tactile Push Button Switch (12x12x12mm),1,15,15,Probots / IndiaMART,"https://probots.co.in/12x12x12mm-tactile-push-button-switch.html",Verified,"Custom function 2 button - through-hole mounting"
-SW7,Rotary Encoder EC11 (15mm Half Shaft),1,69,69,Robocraze / FlyRobo,"https://robocraze.com/products/ec11-15mm-rotary-encoder-module",Verified,"Mode selection encoder with integrated push switch"
-DS1,OLED Display Module (0.96 inch I2C 128x64 Blue),1,169,169,Robocraze / KTRON,"https://www.ktron.in/product/oled-display-i2c-0-96-inch/",Verified,"Status and mode indication display"
-J1,USB-C Female Receptacle Connector (16-pin SMD),1,15,15,IndiaMART / Mouser India,"https://www.indiamart.com/proddetail/16-pin-usb-type-c-connector-smd-2851315632688.html",Verified,"Power and data connectivity"
-C1,Electrolytic Capacitor 10µF 16V (through-hole),1,8,8,Probots / Robocraze,"Estimated",Estimate,"Decoupling for ESP32-S3 power supply"
-C2,Ceramic Capacitor 0.1µF 50V (through-hole),2,3,6,Probots / Robocraze,"Estimated",Estimate,"Bypass capacitors for digital lines"
-R1,Resistor 10kΩ 1/4W (through-hole),6,1,6,Probots / Robocraze,"Estimated",Estimate,"Pull-up resistors for button inputs (6x needed)"
-R2,Resistor 220Ω 1/4W (through-hole),2,1,2,Probots / Robocraze,"Estimated",Estimate,"Current limiting resistors for status LED (if used)"
-Header,Male Header Pins 2.54mm (40-pin strip),1,25,25,Probots / Robocraze,"Estimated",Estimate,"For breadboard/prototype PCB connections"
-Cable,USB-C Cable (1m standard),1,150,150,Amazon.in,"https://www.amazon.in/s?k=usb+c+cable+1m",Verified,"For programming and power delivery"
-Jumper,Jumper Wire Kit (Male-to-Male 40pcs 20cm),1,69,69,Probots / Robocraze,"https://probots.co.in/male-to-male-jumper-wires-40-pcs-20-cm.html",Verified,"Prototyping connections on breadboard"
-Breadboard,Solderless Breadboard (830 point),1,99,99,Robocraze / Probots,"Estimated",Estimate,"For prototyping before PCB fabrication"
-,,,,,,
-SUBTOTAL (Components),,,1672,,"Component subtotal"
-PCB Manufacturing (10 units @ 2-layer),,,500-800,Estimated,"Estimated from online PCB fabs (JLC, PCBWay, etc.)"
-Shipping (India Domestic),,,50-150,Estimated,"Electronics suppliers + PCB fab shipping"
-GST (18% on components),,,301,Estimated,"Goods and Services Tax on components"
-ESTIMATED PROJECT TOTAL,,,2523-2923,,"For one fully functional unit with spare components"
+Designator,Component,Qty,Unit Price (INR),Total Price (INR),Supplier (India),Purchase Link,Price Status,Notes
+U1,ESP32-S3 Development Board (16MB Flash 8MB PSRAM USB-C),1,799,799,Amazon.in / Robocraze,https://www.amazon.in/esp32-s3/s?k=esp32+s3,Verified,"Dual-core CPU with WiFi/BLE, USB-C for power and programming"
+SW1,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Play/Pause button"
+SW2,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Cut button"
+SW3,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Undo button"
+SW4,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Save button"
+SW5,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Custom function 1 button"
+SW6,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Custom function 2 button"
+SW7,Rotary Encoder EC11 (15mm half shaft with push switch),1,42,42,FlyRobo / Techtonics,https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm,Verified,"Mode selection and rotary control"
+DS1,OLED Display Module (0.96 inch I2C 128x64 Blue SSD1306),1,169,169,Robocraze / KTRON,https://www.ktron.in/product/oled-display-i2c-0-96-inch/,Verified,"Status and mode indication display"
+J1,USB-C Female Receptacle Connector (16-pin SMD),1,9,9,IndiaMART,https://www.indiamart.com/proddetail/16-pin-usb-type-c-connector-smd-2851315632688.html,Verified,"Power and data connectivity to host computer"
+LED1,LED (5mm Red through-hole),1,2,2,Probots / Robocraze,Estimated,"Status indicator (optional - tentative)"
+R1,Resistor 220Ω 1/4W 5% (through-hole),1,0.7,0.7,ElectroGlobal (pack of 10),Estimated,"Current limiting for LED (if used); ₹7 per 10-pack"
+R2,Resistor 10kΩ 1/4W 5% (through-hole),6,0.5,3,ElectroGlobal (pack of 10),Estimated,"Pull-up resistors for button inputs; bulk pack"
+C1,Electrolytic Capacitor 10µF 16V (through-hole),1,5,5,Probots / Robocraze,Estimated,"Decoupling for ESP32-S3 power supply"
+C2,Ceramic Capacitor 0.1µF 50V (through-hole),2,2,4,Probots / Robocraze,Estimated,"Bypass capacitors for digital lines"
+Header,Male Header Pins 2.54mm (40-pin breakaway strip),1,15,15,Probots / Robocraze,Estimated,"Breadboard connections and GPIO breakout"
+Breadboard,Solderless Breadboard (830 contact points),1,50,50,FindMyChips / Amazon.in,https://www.amazon.in/breadboards/s?k=breadboards,Verified,"Prototyping and testing before PCB fabrication"
+Jumper,Jumper Wire Kit (Male-to-Male 40pcs 20cm),1,35,35,ElectroGlobal / Probots,https://probots.co.in/male-to-male-jumper-wires-40-pcs-20-cm.html,Verified,"Prototyping connections on breadboard; mid-range kit"
+Cable,USB-C Cable (1m standard A-to-C),1,99,99,Amazon.in,https://www.amazon.in/s?k=usb+c+cable+1m,Verified,"Programming and power delivery to device"
+,,,,,,,
+COMPONENT SUBTOTAL,,,1334,1334,,,"All parts for one complete CreatorPad unit"
+,,,,,,,
+PCB MANUFACTURING ESTIMATE,,,600-1000,,"JLC PCB / PCBWay 2-layer order (10 units)","Estimated","Gerber fabrication not yet available (board incomplete)"
+SHIPPING (India Domestic),,,75-200,,"Combined electronics + PCB fab","Estimated","Couriered from suppliers and PCB manufacturer"
+GST 18% (on component subtotal),,,240,,"Tax on ₹1,334 components","Estimated","Goods and Services Tax"
+,,,,,,,
+ESTIMATED TOTAL PROJECT COST (Single Unit),,,2249-2774,,"Component + allocated PCB + tax + shipping","Estimated","Assumes ~1 unit cost from 10-unit PCB order"
+,,,,,,,
+NOTES:,"- This BOM is for a complete working prototype/first-unit build",
+,"- Prices verified from current Indian electronics supplier listings as of 2026-10-10",
+,"- LED and some resistor values are estimates based on typical CreatorPad functionality",
+,"- PCB manufacturing cost is NOT included in component cost; fabrication files not yet available",
+,"- Breadboard option shown for prototyping; final product uses custom PCB",
+,"- USB-C cable sourced externally (not PCB-integrated)",
+,"- Prices exclude any bulk discounts or promotional offers",
+,"- Actual checkout total may vary ±10% based on current stock and promotions"
