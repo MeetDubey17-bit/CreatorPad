@@ -1,37 +1,28 @@
-Designator,Component,Qty,Unit Price (INR),Total Price (INR),Supplier (India),Purchase Link,Price Status,Notes
-U1,ESP32-S3 Development Board (16MB Flash 8MB PSRAM USB-C),1,799,799,Amazon.in / Robocraze,https://www.amazon.in/esp32-s3/s?k=esp32+s3,Verified,"Dual-core CPU with WiFi/BLE, USB-C for power and programming"
-SW1,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Play/Pause button"
-SW2,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Cut button"
-SW3,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Undo button"
-SW4,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Save button"
-SW5,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Custom function 1 button"
-SW6,Tactile Push Button Switch (12x12x12mm through-hole),1,1,1,FindMyChips / Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Verified,"Custom function 2 button"
-SW7,Rotary Encoder EC11 (15mm half shaft with push switch),1,42,42,FlyRobo / Techtonics,https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm,Verified,"Mode selection and rotary control"
-DS1,OLED Display Module (0.96 inch I2C 128x64 Blue SSD1306),1,169,169,Robocraze / KTRON,https://www.ktron.in/product/oled-display-i2c-0-96-inch/,Verified,"Status and mode indication display"
-J1,USB-C Female Receptacle Connector (16-pin SMD),1,9,9,IndiaMART,https://www.indiamart.com/proddetail/16-pin-usb-type-c-connector-smd-2851315632688.html,Verified,"Power and data connectivity to host computer"
-LED1,LED (5mm Red through-hole),1,2,2,Probots / Robocraze,Estimated,"Status indicator (optional - tentative)"
-R1,Resistor 220Ω 1/4W 5% (through-hole),1,0.7,0.7,ElectroGlobal (pack of 10),Estimated,"Current limiting for LED (if used); ₹7 per 10-pack"
-R2,Resistor 10kΩ 1/4W 5% (through-hole),6,0.5,3,ElectroGlobal (pack of 10),Estimated,"Pull-up resistors for button inputs; bulk pack"
-C1,Electrolytic Capacitor 10µF 16V (through-hole),1,5,5,Probots / Robocraze,Estimated,"Decoupling for ESP32-S3 power supply"
-C2,Ceramic Capacitor 0.1µF 50V (through-hole),2,2,4,Probots / Robocraze,Estimated,"Bypass capacitors for digital lines"
-Header,Male Header Pins 2.54mm (40-pin breakaway strip),1,15,15,Probots / Robocraze,Estimated,"Breadboard connections and GPIO breakout"
-Breadboard,Solderless Breadboard (830 contact points),1,50,50,FindMyChips / Amazon.in,https://www.amazon.in/breadboards/s?k=breadboards,Verified,"Prototyping and testing before PCB fabrication"
-Jumper,Jumper Wire Kit (Male-to-Male 40pcs 20cm),1,35,35,ElectroGlobal / Probots,https://probots.co.in/male-to-male-jumper-wires-40-pcs-20-cm.html,Verified,"Prototyping connections on breadboard; mid-range kit"
-Cable,USB-C Cable (1m standard A-to-C),1,99,99,Amazon.in,https://www.amazon.in/s?k=usb+c+cable+1m,Verified,"Programming and power delivery to device"
-,,,,,,,
-COMPONENT SUBTOTAL,,,1334,1334,,,"All parts for one complete CreatorPad unit"
-,,,,,,,
-PCB MANUFACTURING ESTIMATE,,,600-1000,,"JLC PCB / PCBWay 2-layer order (10 units)","Estimated","Gerber fabrication not yet available (board incomplete)"
-SHIPPING (India Domestic),,,75-200,,"Combined electronics + PCB fab","Estimated","Couriered from suppliers and PCB manufacturer"
-GST 18% (on component subtotal),,,240,,"Tax on ₹1,334 components","Estimated","Goods and Services Tax"
-,,,,,,,
-ESTIMATED TOTAL PROJECT COST (Single Unit),,,2249-2774,,"Component + allocated PCB + tax + shipping","Estimated","Assumes ~1 unit cost from 10-unit PCB order"
-,,,,,,,
-NOTES:,"- This BOM is for a complete working prototype/first-unit build",
-,"- Prices verified from current Indian electronics supplier listings as of 2026-10-10",
-,"- LED and some resistor values are estimates based on typical CreatorPad functionality",
-,"- PCB manufacturing cost is NOT included in component cost; fabrication files not yet available",
-,"- Breadboard option shown for prototyping; final product uses custom PCB",
-,"- USB-C cable sourced externally (not PCB-integrated)",
-,"- Prices exclude any bulk discounts or promotional offers",
-,"- Actual checkout total may vary ±10% based on current stock and promotions"
+Designator,Component,Specifications,Qty,Unit Price (USD),Total Price (USD),Supplier,Purchase Link,Price Status,Notes
+U1,ESP32-S3 Development Board,"16MB Flash, 8MB PSRAM, USB-C, dual-core CPU, WiFi/BLE",1,9.63,9.63,Amazon.in / Robocraze,https://www.amazon.in/esp32-s3/s?k=esp32+s3,Estimated (converted from INR),"Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10. Main microcontroller module for CreatorPad."
+SW1,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Play/Pause button. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW2,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Cut button. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW3,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Undo button. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW4,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Save button. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW5,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Custom function 1. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW6,Tactile Push Button Switch,"12x12x12mm, through-hole, momentary",1,0.01,0.01,Probots,https://probots.co.in/12x12x12mm-tactile-push-button-switch.html,Estimated (converted from INR),"Custom function 2. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+SW7,Rotary Encoder,"EC11, 15mm half shaft, integrated push switch, 20 positions",1,0.51,0.51,FlyRobo,https://www.flyrobo.in/ec11-rotary-encoder-half-shaft-handle-potentiometer-15mm,Estimated (converted from INR),"Mode selection and rotation control. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+DS1,OLED Display Module,"0.96 inch, 128x64 pixels, I2C interface, SSD1306 controller, blue",1,2.04,2.04,KTRON / Robocraze,https://www.ktron.in/product/oled-display-i2c-0-96-inch/,Estimated (converted from INR),"Status and mode display. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+J1,USB-C Connector,"16-pin female receptacle, SMD, right-angle, shielded",1,0.11,0.11,IndiaMART,https://www.indiamart.com/proddetail/16-pin-usb-type-c-connector-smd-2851315632688.html,Estimated (converted from INR),"Power and data connection. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+LED1,LED (optional),"5mm, red, through-hole, 20mA rated",1,0.02,0.02,Probots / Robocraze,N/A,Estimated (converted from INR),"Status indicator. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+R1,Resistor,"220Ω, 1/4W, 5%, through-hole",1,0.01,0.01,ElectroGlobal,N/A,Estimated (converted from INR),"Current limiting resistor for LED (if used). Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+R2,Resistor,"10kΩ, 1/4W, 5%, through-hole",6,0.01,0.06,ElectroGlobal,N/A,Estimated (converted from INR),"Pull-up resistors for button inputs. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+C1,Electrolytic Capacitor,"10µF, 16V, through-hole",1,0.06,0.06,Probots / Robocraze,N/A,Estimated (converted from INR),"Decoupling capacitor for ESP32-S3 power supply. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+C2,Ceramic Capacitor,"0.1µF, 50V, through-hole",2,0.02,0.04,Probots / Robocraze,N/A,Estimated (converted from INR),"Bypass capacitors for digital lines. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+Header,Male Header Pins,"2.54mm pitch, 40-pin breakaway strip, through-hole",1,0.18,0.18,Robocraze,N/A,Estimated (converted from INR),"GPIO and power breakout headers. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+Breadboard,Solderless Breadboard,"830 contact points, ABS plastic, reusable",1,0.60,0.60,Amazon.in,https://www.amazon.in/breadboards/s?k=breadboards,Estimated (converted from INR),"Prototyping before PCB fabrication. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+Jumper,Jumper Wire Kit,"Male-to-Male, 40 pieces, 20cm",1,0.42,0.42,Probots,https://probots.co.in/male-to-male-jumper-wires-40-pcs-20-cm.html,Estimated (converted from INR),"Prototyping connections. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+Cable,USB-C Cable,"USB 2.0 Type-C, 1m length, charging + data",1,1.19,1.19,Amazon.in,https://www.amazon.in/s?k=usb+c+cable+1m,Estimated (converted from INR),"Programming and power delivery. Converted from INR to USD using 1 USD = 83.00 INR on 2026-10-10."
+,,,,,,,,,
+COMPONENT_SUBTOTAL,, , , ,25.72, , , ,"Estimated subtotal for the components listed above. Values are converted from INR using 1 USD = 83.00 INR on 2026-10-10."
+,,,,,,,,,
+PCB_MANUFACTURING_ESTIMATE,, , , ,10.00, , ,Estimated,"Estimated PCB fab cost for a 2-layer prototype; not yet generated because the board is not completed and validated."
+SHIPPING_ESTIMATE,, , , ,2.00, , ,Estimated,"Estimated domestic shipping for prototype components and PCB."
+TAX_ESTIMATE,, , , ,4.00, , ,Estimated,"Estimated tax on hardware purchases."
+,,,,,,,,,
+TOTAL_ESTIMATED_PROJECT_COST,, , , ,41.72, , ,Estimated,"This is an estimate only. Fabrication files remain pending until the actual PCB design is complete and DRC-validated."
